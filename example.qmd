@@ -101,15 +101,27 @@ knitr::include_graphics("Image/Q_1.png")
 
 #### 10. On main, create a new section in example.qmd that includes an easy to make plot. Commit the changes, and demonstrate using the command line interface how to undo the commit without losing your local changes.
 
+## Scatter plot showcasing Engine displacement vs Highway MPG, filtered by vehicle class
 
+```{r}
+#| label: fig-scatterplot
+#| fig-cap: "Engine displacement vs Highway MPG, filtered by vehicle class."
 
+library(tidyverse)
+
+mpg <- read.csv("data/mpg_data.csv")
+
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point(alpha = 0.7, size = 2) +
+  labs(x = "Engine Displacement", y = "Highway MPG", color = "Vehicle Class") +
+  theme_minimal()
+```
 
 ```{r}
 ##| fig.width: "10%"
 #knitr::include_graphics("Image/")
 ```
 
-## SCATTER PLOT 
 ---
 
 **THE END**
