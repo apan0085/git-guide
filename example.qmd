@@ -35,7 +35,7 @@ knitr::include_graphics("Image/Q_1.png")
 #### 3. Create a new branch called testbranch. Modify the file example.qmd and add the changes to both the local and remote repositories.
 
 ```{r}
-##| fig.width: "10%" abc
+##| fig.width: "10%"
 #knitr::include_graphics("Image/")
 ```
 
@@ -44,7 +44,7 @@ knitr::include_graphics("Image/Q_1.png")
 #### 4. Create a folder called data, and add the data from Assignment 1 to that folder. Amend the previous commit to include the data folder. Push this amended commit to the remote.
 
 ```{r}
-##| fig.width: "10%" abc
+##| fig.width: "10%"
 #knitr::include_graphics("Image/")
 ```
 
@@ -106,6 +106,8 @@ knitr::include_graphics("Image/Q_1.png")
 #knitr::include_graphics("Image/")
 ```
 
+---
 
+***THE END***
 
 
