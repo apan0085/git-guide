@@ -104,13 +104,14 @@ knitr::include_graphics("Image/Q_1.png")
 ## Scatter plot showcasing Engine displacement vs Highway MPG, filtered by vehicle class
 
 ```{r}
-#| label: fig-scatterplot
+#| label: fig-scatterplot #Labeling the scatter plot"
 #| fig-cap: "Engine displacement vs Highway MPG, filtered by vehicle class."
 
-library(tidyverse)
+library(tidyverse) #Loading the library required
 
-mpg <- read.csv("data/mpg_data.csv")
+mpg <- read.csv("data/mpg_data.csv") #Reading the data
 
+#Plotting a scatter plot
 ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
   geom_point(alpha = 0.7, size = 2) +
   labs(x = "Engine Displacement", y = "Highway MPG", color = "Vehicle Class") +
