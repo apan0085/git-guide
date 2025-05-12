@@ -44,7 +44,7 @@ knitr::include_graphics("Image/Q_1.png")
 #### 4. Create a folder called data, and add the data from Assignment 1 to that folder. Amend the previous commit to include the data folder. Push this amended commit to the remote.
 
 ```{r}
-##| fig.width: "10%"
+##| fig.width: "10%" abc
 #knitr::include_graphics("Image/")
 ```
 
